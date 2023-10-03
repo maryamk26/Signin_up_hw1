@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Login and Registration form
+    </title>
+    <link rel = "stylesheet" href = "design.css">
+</head>
+<body>
+<div class="Maryam">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="login-btn" onclick="signin()" >SIGN IN</button>
+            <button type="button" class="login-btn" onclick="signup()" >SIGN UP</button>
+        </div>
+        <div class="social-icons">
+            <img src="fb.jpeg">
+            <img src="gg.jpeg">
+            <img src="ig.jpeg">
+        </div>
+        <form id="signin" class="input-group">
+            <input type="text" class="input-field" placeholder="USERNAME" required>
+            <input type="text" class="input-field" placeholder="PASSWORD" required>
+            <input type="checkbox" class="check-box"> <span> Remember me </span>
+            <button type="submit" class="submit-btn">SIGN IN</button>
+        </form>
+        <form id="signup" class="input-group">
+            <input type="text" class="input-field" placeholder="USERNAME" required>
+            <input type="email" class="input-field" placeholder="EMAIL ADRESS" required>
+            <input type="text" class="input-field" placeholder="PASSWORD" required>
+            <input type="checkbox" class="check-box" > <span> I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">SIGN UP</button>
+        </form>
+    </div>
+</div>
+<script>
+    var x = document.getElementById("signin");
+    var y = document.getElementById("signup");
+    var z = document.getElementById("btn");
+
+    function signup() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+
+    function signin() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+    }
+</script>
+</body>
+</html>
